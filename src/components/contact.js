@@ -1,8 +1,7 @@
 export function Contact() {
   return (
     <section className="flex flex-grow flex-col py-4">
-      <div role="none" id="contact" className="h-12" />
-      <header className="flex h-14 items-center bg-blue-800 px-4 text-yellow-300">
+      <header className="flex h-14 items-center px-4 ">
         <h2 className="text-4xl font-medium">Contact</h2>
       </header>
       <address className="flex flex-grow items-center justify-end px-4">

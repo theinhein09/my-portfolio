@@ -1,17 +1,14 @@
-import { useState } from "react";
 import { Link } from "react-scroll";
 import { projects } from "../data";
 
-export function Navbar() {
-  const [projectsMenu, toggleProjectsMenu] = useState(false);
-
+export function Sidebar() {
   return (
-    <nav className="sticky top-0 z-50 mx-auto h-10 max-w-7xl shadow-md shadow-black/10 md:hidden">
-      <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
+    <aside className="sticky top-7 z-50 my-4 mb-8 hidden h-fit w-56 min-w-max flex-col rounded-lg p-4 shadow-md ring-1 ring-black/10  md:flex">
+      <ul className="flex flex-col gap-4">
         <li>
           <button>
             <Link
-              activeClass="navlink-active"
+              activeClass="sidebar-link-active"
               smooth
               spy
               to="home"
@@ -24,39 +21,38 @@ export function Navbar() {
         <li>
           <button>
             <Link
-              activeClass="navlink-active"
+              activeClass="sidebar-link-active"
               smooth
               spy
               to="about"
-              offset={-30}
               className="rounded px-4 py-1 transition-all"
             >
               About
             </Link>
           </button>
         </li>
-        <li className="relative">
-          <button
-            onClick={() => toggleProjectsMenu(!projectsMenu)}
-            className="rounded px-4"
-          >
-            Projects
+        <li>
+          <button>
+            <Link
+              activeClass="sidebar-link-active"
+              smooth
+              spy
+              to="projects"
+              className="rounded px-4 py-1 transition-all"
+            >
+              Projects
+            </Link>
           </button>
-          <ul
-            className={`absolute -bottom-3 z-50 flex w-40 min-w-max translate-y-full flex-col gap-3 whitespace-nowrap rounded-lg p-2 shadow-lg shadow-black/30 ring-1 ring-black/10 transition-all ${
-              projectsMenu ? "visible opacity-100" : "invisible opacity-0"
-            }`}
-          >
+          <ul className="ml-4 mt-4 flex flex-col gap-4">
             {projects.map((project) => (
-              <li>
+              <li key={project.name}>
                 <button>
                   <Link
-                    activeClass="navlink-active"
+                    activeClass="sidebar-link-active"
                     smooth
                     spy
                     to={project.id}
-                    className="rounded py-1 pl-1 pr-4 transition-all"
-                    offset={-30}
+                    className="rounded px-4 py-1 transition-all"
                   >
                     {project.name}
                   </Link>
@@ -68,11 +64,10 @@ export function Navbar() {
         <li>
           <button>
             <Link
-              activeClass="navlink-active"
+              activeClass="sidebar-link-active"
               smooth
               spy
               to="contact"
-              offset={-30}
               className="rounded px-4 py-1 transition-all"
             >
               Contact
@@ -80,6 +75,6 @@ export function Navbar() {
           </button>
         </li>
       </ul>
-    </nav>
+    </aside>
   );
 }
