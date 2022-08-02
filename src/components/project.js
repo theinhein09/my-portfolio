@@ -7,24 +7,22 @@ export function Project({ project }) {
       <header className="mb-8 flex h-12 items-center justify-between px-4 ">
         <h3 className="text-2xl">{project.name}</h3>
         <div className="flex gap-4">
-          <button className="rounded px-5 py-1 text-sm ring-1 ring-black/10">
-            <a
-              href={project["source-code"]}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source code
-            </a>
-          </button>
-          <button className="rounded px-5 py-1 text-sm ring-1 ring-black/10">
-            <a
-              href={project["live-demo"]}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live Demo
-            </a>
-          </button>
+          <a
+            href={project["source-code"]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-28 justify-center rounded py-1 text-sm ring-1 ring-black/10"
+          >
+            Source code
+          </a>
+          <a
+            href={project["live-demo"]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-28 justify-center rounded py-1 text-sm ring-1 ring-black/10"
+          >
+            Live Demo
+          </a>
         </div>
       </header>
       <section className="flex flex-grow flex-col items-center gap-10 px-4">
