@@ -1,11 +1,23 @@
 export function Contact() {
   return (
-    <section className="flex-grow">
-      <div role="none" id="contact" className="h-10" />
-      <header className="h-10">
-        <h2>Contact</h2>
+    <section className="flex flex-grow flex-col py-4">
+      <div role="none" id="contact" className="h-12" />
+      <header className="flex h-14 items-center bg-blue-800 px-4 text-yellow-300">
+        <h2 className="text-4xl font-medium">Contact</h2>
       </header>
-      <address>Address</address>
+      <address className="flex flex-grow items-center justify-end px-4">
+        <ul className="flex flex-col gap-10 text-right">
+          <li>Fremont</li>
+          <li>California</li>
+          <li>United State</li>
+          <li>
+            <a href="mailto:theinhein09@gmail.com">theinhein09@gmail.com</a>
+          </li>
+          <li>
+            <a href="tel:+1510-857-9331">+1 (510) 857 - 9331</a>
+          </li>
+        </ul>
+      </address>
     </section>
   );
 }
