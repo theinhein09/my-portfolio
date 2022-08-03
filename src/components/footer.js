@@ -3,7 +3,7 @@ import { Contact } from "./contact";
 export function Footer() {
   return (
     <footer
-      className="mx-auto flex min-h-screen max-w-7xl flex-col ring-1"
+      className="mx-auto flex min-h-screen max-w-7xl flex-col"
       id="contact"
     >
       <Contact />

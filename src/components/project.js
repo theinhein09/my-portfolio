@@ -6,7 +6,7 @@ import { Video } from "./video";
 export function Project({ project }) {
   return (
     <article
-      className="my-4 mx-4 flex flex-col py-4 ring-1 md:min-h-screen"
+      className="my-4 mx-4 flex flex-col py-4 shadow shadow-black/20 ring-1 ring-black/10 md:min-h-screen"
       id={project.id}
     >
       <header className="flex h-12 items-center justify-between px-4 ">
@@ -34,12 +34,12 @@ export function Project({ project }) {
       </section>
       <section className=" flex-grow flex-col items-center gap-4 px-4">
         <section className="hidden w-full max-w-6xl gap-5 p-1 xl:flex">
-          {project.videos.map((video, i) => (
+          {project.videos.map(({ id, url }) => (
             <div
-              key={i}
-              className="flex h-fit flex-grow items-center justify-center rounded-lg p-1 shadow-md ring-1 ring-black/5"
+              key={id}
+              className="flex h-96 flex-grow items-center justify-center p-1 shadow-md ring-1 ring-black/5"
             >
-              <Video video={video} />
+              <Video url={url} />
             </div>
           ))}
         </section>
@@ -53,10 +53,10 @@ export function Project({ project }) {
             swipeable
             className="relative"
           >
-            {project.videos.map((video, i) => (
-              <div key={i} className="flex w-full justify-center">
-                <div className="my-2 flex h-96 w-full  max-w-sm items-center justify-center rounded-lg p-1 shadow-md ring-1 ring-black/5">
-                  <Video video={video} />
+            {project.videos.map(({ id, url }) => (
+              <div key={id} className="flex w-full justify-center">
+                <div className="my-2 flex h-96 w-full  max-w-sm items-center justify-center p-1 shadow-md ring-1 ring-black/5">
+                  <Video url={url} />
                 </div>
               </div>
             ))}
@@ -66,6 +66,15 @@ export function Project({ project }) {
           <p className="mx-auto max-w-prose text-justify">
             {project.description}
           </p>
+        </section>
+        <section className="mx-auto flex w-full max-w-prose gap-x-4 py-4">
+          <span className="flex-none">Built with</span>
+          <span>-</span>
+          <ul className="flex flex-wrap gap-x-4 ">
+            {project.technologies.map(({ id, name }) => (
+              <li key={id} className="flex-none leading-7">{`"${name}"`}</li>
+            ))}
+          </ul>
         </section>
       </section>
     </article>

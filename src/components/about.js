@@ -1,14 +1,14 @@
 export function About() {
   return (
     <section
-      className="my-4 flex min-h-screen flex-col  py-4  ring-1"
+      className="my-4 flex min-h-screen flex-col  py-4  ring-1 ring-black/10"
       id="about"
     >
       <header className="flex h-14 items-center px-4 ">
         <h2>About</h2>
       </header>
       <section className="flex flex-grow items-center justify-center px-4">
-        <div className="flex h-fit flex-grow flex-col items-center justify-center rounded-lg p-5 py-14 shadow-md ring-1 ring-black/5">
+        <div className="flex h-fit flex-grow flex-col items-center justify-center p-5 py-14 shadow shadow-black/20 ring-1 ring-black/10 ">
           <p className="max-w-prose text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam
             augue leo, eu eleifend lacus interdum laoreet. Vestibulum eu nunc

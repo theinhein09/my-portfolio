@@ -3,7 +3,7 @@ import { FaMobile } from "react-icons/fa";
 
 export function Contact() {
   return (
-    <section className="flex flex-grow flex-col py-4">
+    <section className="flex flex-grow flex-col py-4  ring-1 ring-black/10">
       <header className="flex h-14 items-center px-4 ">
         <h2>Contact</h2>
       </header>
@@ -30,7 +30,7 @@ export function Contact() {
             </a>
           </li>
         </ul>
-        <p className="mt-10 max-w-xs text-right text-lg md:max-w-fit">
+        <p className="mt-10 max-w-xs text-right text-lg font-bold md:max-w-fit">
           Let's talk!
         </p>
       </address>
