@@ -2,7 +2,7 @@ export function Contact() {
   return (
     <section className="flex flex-grow flex-col py-4">
       <header className="flex h-14 items-center px-4 ">
-        <h2 className="text-4xl font-medium">Contact</h2>
+        <h2 className="text-4xl">Contact</h2>
       </header>
       <address className="flex flex-grow flex-col items-end justify-center px-4">
         <ul className="flex flex-col gap-10 text-right">
