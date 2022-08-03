@@ -36,8 +36,8 @@ export function Project({ project }) {
         <section className="mx-auto block max-w-xl xl:hidden">
           <Carousel
             showThumbs={false}
-            autoPlay
             infiniteLoop
+            showStatus={false}
             renderArrowPrev={(clickHandler) => {
               return (
                 <button
