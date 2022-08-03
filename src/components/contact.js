@@ -14,20 +14,23 @@ export function Contact() {
           <li>
             <a
               href="mailto:theinhein09@gmail.com"
-              className="flex items-center gap-2"
+              className="flex items-center justify-end gap-2"
             >
               <MdEmail />
               theinhein09@gmail.com
             </a>
           </li>
           <li>
-            <a href="tel:+1510-857-9331" className="flex items-center gap-2">
+            <a
+              href="tel:+1510-857-9331"
+              className="flex items-center justify-end gap-2"
+            >
               <FaMobile />
               +1 (510) 857 - 9331
             </a>
           </li>
         </ul>
-        <p className="mt-10">
+        <p className="mt-10 max-w-xs text-right">
           Reach me out if you want to have a chat with me.
         </p>
       </address>

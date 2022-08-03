@@ -34,9 +34,9 @@ export function Project({ project }) {
       </section>
       <section className=" flex-grow flex-col items-center gap-4 px-4">
         <section className="hidden w-full max-w-6xl gap-5 p-1 xl:flex">
-          {project.videos.map((video) => (
+          {project.videos.map((video, i) => (
             <div
-              key={video}
+              key={i}
               className="flex h-fit flex-grow items-center justify-center rounded-lg p-1 shadow-md ring-1 ring-black/5"
             >
               <Video video={video} />
@@ -53,19 +53,13 @@ export function Project({ project }) {
             swipeable
             className="relative"
           >
-            {project.videos.map((video) => (
-              <div key={video} className="flex w-full justify-center">
+            {project.videos.map((video, i) => (
+              <div key={i} className="flex w-full justify-center">
                 <div className="my-2 flex h-96 w-full  max-w-sm items-center justify-center rounded-lg p-1 shadow-md ring-1 ring-black/5">
                   <Video video={video} />
                 </div>
               </div>
             ))}
-            <div className="flex w-full justify-center">
-              <div className="my-2 h-96 w-full max-w-sm rounded-lg shadow-md ring-1 ring-black/5"></div>
-            </div>
-            <div className="flex w-full justify-center">
-              <div className="my-2 h-96 w-full max-w-sm rounded-lg shadow-md ring-1 ring-black/5"></div>
-            </div>
           </Carousel>
         </section>
         <section className="mt-4 w-full max-w-6xl py-4">
