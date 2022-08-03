@@ -20,7 +20,7 @@ export function Project({ project }) {
           className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
         >
           <BsGithub />
-          Source code
+          <span>Source code</span>
         </a>
         <a
           href={project["live-demo"]}
