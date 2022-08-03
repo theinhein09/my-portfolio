@@ -3,7 +3,7 @@ import { projects } from "../data";
 
 export function Sidebar() {
   return (
-    <aside className="sticky top-7 z-50 my-4 mb-8 hidden h-fit w-56 min-w-max flex-col rounded-lg p-4 shadow-md ring-1 ring-black/10  md:flex">
+    <aside className="sticky top-7 z-50 my-4 mx-2 mb-8 hidden h-fit w-56 min-w-max flex-col rounded-lg p-4 shadow-md ring-1 ring-black/10  md:flex">
       <ul className="flex flex-col gap-4">
         <li>
           <button>

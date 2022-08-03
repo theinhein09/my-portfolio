@@ -48,7 +48,7 @@ export function Navbar() {
             }`}
           >
             {projects.map((project) => (
-              <li>
+              <li key={project.name}>
                 <button>
                   <Link
                     activeClass="navlink-active"

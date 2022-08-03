@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-  }
-}
-
 @layer components {
   .navlink-active {
     @apply ring-1 ring-black/10;

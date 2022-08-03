@@ -1,3 +1,5 @@
+import { Carousel } from "react-responsive-carousel";
+
 export function Project({ project }) {
   return (
     <article
@@ -25,11 +27,49 @@ export function Project({ project }) {
           Live Demo
         </a>
       </section>
-      <section className="flex flex-grow flex-col items-center gap-4 px-4">
-        <section className="flex h-96 w-full max-w-6xl gap-5 p-1">
+      <section className=" flex-grow flex-col items-center gap-4 px-4">
+        <section className="hidden  h-96 w-full max-w-6xl gap-5 p-1 xl:flex">
           <div className="flex-grow rounded-lg shadow-md ring-1 ring-black/5"></div>
           <div className="flex-grow rounded-lg shadow-md ring-1 ring-black/5"></div>
           <div className="flex-grow rounded-lg shadow-md ring-1 ring-black/5"></div>
+        </section>
+        <section className="mx-auto block max-w-xl xl:hidden">
+          <Carousel
+            showThumbs={false}
+            autoPlay
+            infiniteLoop
+            renderArrowPrev={(clickHandler) => {
+              return (
+                <button
+                  onClick={clickHandler}
+                  className="absolute top-1/2 left-2 z-20 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
+                >
+                  P
+                </button>
+              );
+            }}
+            renderArrowNext={(clickHandler) => {
+              return (
+                <button
+                  onClick={clickHandler}
+                  className="absolute top-1/2 right-2 z-20 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
+                >
+                  N
+                </button>
+              );
+            }}
+            className="relative"
+          >
+            <div className="flex w-full justify-center">
+              <div className="my-2 h-96 w-full max-w-sm  rounded-lg shadow-md ring-1 ring-black/5"></div>
+            </div>
+            <div className="flex w-full justify-center">
+              <div className="my-2 h-96 w-full max-w-sm rounded-lg shadow-md ring-1 ring-black/5"></div>
+            </div>
+            <div className="flex w-full justify-center">
+              <div className="my-2 h-96 w-full max-w-sm rounded-lg shadow-md ring-1 ring-black/5"></div>
+            </div>
+          </Carousel>
         </section>
         <section className="w-full max-w-6xl py-4">
           <p className="mx-auto max-w-prose text-justify">
