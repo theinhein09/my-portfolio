@@ -10,7 +10,7 @@ export function Project({ project }) {
       id={project.id}
     >
       <header className="flex h-12 items-center justify-between px-4 ">
-        <h3 className="text-2xl">{project.name}</h3>
+        <h3>{project.name}</h3>
       </header>
       <section className="mx-4 mb-8 mt-4 flex gap-4">
         <a

@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <section className="flex flex-grow flex-col py-4">
       <header className="flex h-14 items-center px-4 ">
-        <h2 className="text-4xl">Contact</h2>
+        <h2>Contact</h2>
       </header>
       <address className="flex flex-grow flex-col items-end justify-center px-4">
         <ul className="flex flex-col gap-10 text-right">
@@ -30,8 +30,8 @@ export function Contact() {
             </a>
           </li>
         </ul>
-        <p className="mt-10 max-w-xs text-right">
-          Reach me out if you want to have a chat with me.
+        <p className="mt-10 max-w-xs text-right text-lg md:max-w-fit">
+          Let's talk!
         </p>
       </address>
     </section>

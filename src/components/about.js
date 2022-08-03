@@ -5,7 +5,7 @@ export function About() {
       id="about"
     >
       <header className="flex h-14 items-center px-4 ">
-        <h2 className="text-4xl drop-shadow-md">About</h2>
+        <h2>About</h2>
       </header>
       <section className="flex flex-grow items-center justify-center px-4">
         <div className="flex h-fit flex-grow flex-col items-center justify-center rounded-lg p-5 py-14 shadow-md ring-1 ring-black/5">
