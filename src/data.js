@@ -12,8 +12,12 @@ export const projects = [
     id: "project-1",
     description: lorem,
     "source-code": "https://github.com/theinhein09/note-it",
-    "live-demo": "https://note-it-09.netlify.app/login",
+    "live-demo": "https://note-it-09.netlify.app",
     Icon: VscNotebook,
+    videos: [
+      "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/r_10/portfolio/note-it_b7vv2g",
+      "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/r_10/portfolio/note-it_b7vv2g",
+    ],
   },
   {
     name: "Facebook Clone",
@@ -22,6 +26,7 @@ export const projects = [
     "source-code": "https://github.com/theinhein09/facebook-clone",
     "live-demo": "https://facebook-clone-09.netlify.app",
     Icon: BsFacebook,
+    videos: [],
   },
   {
     name: "Yelp Camp",
@@ -30,6 +35,7 @@ export const projects = [
     "source-code": "",
     "live-demo": "https://morning-depths-83122.herokuapp.com/campgrounds",
     Icon: FaYelp,
+    videos: [],
   },
   {
     name: "Color Palette Generator",
@@ -39,5 +45,6 @@ export const projects = [
     "source-code": "",
     "live-demo": "",
     Icon: IoColorPaletteOutline,
+    videos: [],
   },
 ];
