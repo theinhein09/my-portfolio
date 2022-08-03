@@ -1,4 +1,7 @@
 import { Carousel } from "react-responsive-carousel";
+import { BsGithub } from "react-icons/bs";
+import { FiExternalLink } from "react-icons/fi";
+import { RiArrowLeftSFill, RiArrowRightSFill } from "react-icons/ri";
 
 export function Project({ project }) {
   return (
@@ -14,16 +17,18 @@ export function Project({ project }) {
           href={project["source-code"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-28 justify-center rounded py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
         >
+          <BsGithub />
           Source code
         </a>
         <a
           href={project["live-demo"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-28 justify-center rounded py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
         >
+          <FiExternalLink />
           Live Demo
         </a>
       </section>
@@ -42,9 +47,9 @@ export function Project({ project }) {
               return (
                 <button
                   onClick={clickHandler}
-                  className="absolute top-1/2 left-2 z-20 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
+                  className="absolute left-2 top-1/2 z-20 -translate-y-1/2 rounded p-1 text-3xl shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
                 >
-                  P
+                  <RiArrowLeftSFill />
                 </button>
               );
             }}
@@ -52,9 +57,9 @@ export function Project({ project }) {
               return (
                 <button
                   onClick={clickHandler}
-                  className="absolute top-1/2 right-2 z-20 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
+                  className="absolute right-2 top-1/2 z-20 -translate-y-1/2 rounded p-1 text-3xl shadow outline-none ring-1 ring-black/5 transition-all hover:shadow-black/50 focus:shadow-black/50"
                 >
-                  N
+                  <RiArrowRightSFill />
                 </button>
               );
             }}

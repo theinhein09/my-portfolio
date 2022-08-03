@@ -1,3 +1,6 @@
+import { MdEmail } from "react-icons/md";
+import { FaMobile } from "react-icons/fa";
+
 export function Contact() {
   return (
     <section className="flex flex-grow flex-col py-4">
@@ -9,10 +12,19 @@ export function Contact() {
           <li>Fremont, California</li>
           <li>United State</li>
           <li>
-            <a href="mailto:theinhein09@gmail.com">theinhein09@gmail.com</a>
+            <a
+              href="mailto:theinhein09@gmail.com"
+              className="flex items-center gap-2"
+            >
+              <MdEmail />
+              theinhein09@gmail.com
+            </a>
           </li>
           <li>
-            <a href="tel:+1510-857-9331">+1 (510) 857 - 9331</a>
+            <a href="tel:+1510-857-9331" className="flex items-center gap-2">
+              <FaMobile />
+              +1 (510) 857 - 9331
+            </a>
           </li>
         </ul>
         <p className="mt-10">

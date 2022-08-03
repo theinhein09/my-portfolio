@@ -1,9 +1,11 @@
 import { Link } from "react-scroll";
 import { projects } from "../data";
+import { AiFillHome, AiOutlineUser } from "react-icons/ai";
+import { GrContactInfo, GrProjects } from "react-icons/gr";
 
 export function Sidebar() {
   return (
-    <aside className="sticky top-7 z-50 my-4 mx-2 mb-8 hidden h-fit w-56 min-w-max flex-col rounded-lg p-4 shadow-md ring-1 ring-black/10  md:flex">
+    <aside className="sticky top-7 z-50 my-4 mx-2 mb-8 hidden h-fit w-56 min-w-max flex-col rounded-lg p-4 text-sm shadow-md ring-1  ring-black/10 md:flex">
       <ul className="flex flex-col gap-4">
         <li>
           <button>
@@ -12,8 +14,9 @@ export function Sidebar() {
               smooth
               spy
               to="home"
-              className="rounded px-4 py-1 transition-all"
+              className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
+              <AiFillHome />
               Home
             </Link>
           </button>
@@ -25,8 +28,9 @@ export function Sidebar() {
               smooth
               spy
               to="about"
-              className="rounded px-4 py-1 transition-all"
+              className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
+              <AiOutlineUser />
               About
             </Link>
           </button>
@@ -38,23 +42,25 @@ export function Sidebar() {
               smooth
               spy
               to="projects"
-              className="rounded px-4 py-1 transition-all"
+              className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
+              <GrProjects />
               Projects
             </Link>
           </button>
           <ul className="ml-4 mt-4 flex flex-col gap-4">
-            {projects.map((project) => (
-              <li key={project.name}>
+            {projects.map(({ name, id, Icon }) => (
+              <li key={name}>
                 <button>
                   <Link
                     activeClass="sidebar-link-active"
                     smooth
                     spy
-                    to={project.id}
-                    className="rounded px-4 py-1 transition-all"
+                    to={id}
+                    className="flex items-center gap-2 rounded px-4 py-1 transition-all"
                   >
-                    {project.name}
+                    <Icon />
+                    {name}
                   </Link>
                 </button>
               </li>
@@ -68,8 +74,9 @@ export function Sidebar() {
               smooth
               spy
               to="contact"
-              className="rounded px-4 py-1 transition-all"
+              className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
+              <GrContactInfo />
               Contact
             </Link>
           </button>
