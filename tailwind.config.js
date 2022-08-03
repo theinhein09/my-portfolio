@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         playfairDisplay: ["Playfair Display", "serif"],
+        catamaran: ["Catamaran", "sans-serif"],
       },
     },
   },
