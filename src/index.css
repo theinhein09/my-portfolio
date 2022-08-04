@@ -86,6 +86,6 @@
     @apply ring-1 ring-black/10;
   }
   .sidebar-link-active {
-    @apply underline decoration-4 underline-offset-4;
+    @apply underline decoration-4 underline-offset-2;
   }
 }
