@@ -9,7 +9,7 @@ export function Project({ project }) {
       className="my-4 mx-4 flex flex-col py-4 shadow shadow-black/20 ring-1 ring-black/10 md:min-h-screen"
       id={project.id}
     >
-      <header className="flex h-12 items-center justify-between px-4 ">
+      <header className="flex h-12 items-center px-4">
         <h3>{project.name}</h3>
       </header>
       <section className="mx-4 mb-8 mt-4 flex gap-4">
@@ -32,7 +32,7 @@ export function Project({ project }) {
           Live Demo
         </a>
       </section>
-      <section className=" flex-grow flex-col items-center gap-4 px-4">
+      <section className="flex flex-grow flex-col items-center gap-2 px-4">
         <section className="hidden w-full max-w-6xl gap-5 p-1 xl:flex">
           {project.videos.map(({ id, url }) => (
             <div
@@ -62,15 +62,18 @@ export function Project({ project }) {
             ))}
           </Carousel>
         </section>
-        <section className="mt-4 w-full max-w-6xl py-4">
+        <section className="mt-4 w-full max-w-6xl py-2">
           <p className="mx-auto max-w-prose text-justify">
             {project.description}
           </p>
         </section>
-        <section className="mx-auto flex w-full max-w-prose gap-x-4 py-4">
+        <section className="w-full max-w-6xl flex-grow">
+          <p className="mx-auto max-w-prose text-justify">{project.content}</p>
+        </section>
+        <section className="mx-auto flex w-full max-w-prose gap-x-4 py-4 italic">
           <span className="flex-none">Built with</span>
           <span>-</span>
-          <ul className="flex flex-wrap gap-x-4 ">
+          <ul className="flex flex-wrap gap-x-4">
             {project.technologies.map(({ id, name }) => (
               <li key={id} className="flex-none leading-7">{`"${name}"`}</li>
             ))}

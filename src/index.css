@@ -75,6 +75,10 @@
   p {
     @apply leading-7;
   }
+  nav,
+  nav menu {
+    @apply bg-white;
+  }
 }
 
 @layer components {
