@@ -1,7 +1,7 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 
 function useOutsideClickListener(ref, action) {
-  React.useEffect(() => {
+  useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         return action();
@@ -15,8 +15,12 @@ function useOutsideClickListener(ref, action) {
 }
 
 export function OutSideClickListener({ action, children }) {
-  const wrapperRef = React.useRef(null);
+  const wrapperRef = useRef(null);
   useOutsideClickListener(wrapperRef, action);
 
-  return <div ref={wrapperRef}>{children}</div>;
+  return (
+    <div role="none" ref={wrapperRef}>
+      {children}
+    </div>
+  );
 }

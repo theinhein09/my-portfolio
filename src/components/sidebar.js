@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { projects } from "../data";
-import { AiFillHome, AiOutlineUser } from "react-icons/ai";
-import { GrContactInfo, GrProjects } from "react-icons/gr";
+import { AiFillHome, AiOutlineUser, AiFillProject } from "react-icons/ai";
+import { MdPermContactCalendar } from "react-icons/md";
 
 export function Sidebar() {
   return (
@@ -44,7 +44,7 @@ export function Sidebar() {
               to="projects"
               className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
-              <GrProjects />
+              <AiFillProject />
               Projects
             </Link>
           </button>
@@ -76,7 +76,7 @@ export function Sidebar() {
               to="contact"
               className="flex items-center gap-2 rounded px-4 py-1 transition-all"
             >
-              <GrContactInfo />
+              <MdPermContactCalendar />
               Contact
             </Link>
           </button>
