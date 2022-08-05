@@ -8,7 +8,10 @@ export function About() {
         <h2>About</h2>
       </header>
       <section className="flex flex-grow items-center justify-center px-4">
-        <div className="flex h-fit flex-grow flex-col items-center justify-center p-5 py-14 shadow shadow-black/20 ring-1 ring-black/10 ">
+        <div
+          role="none"
+          className="flex h-fit flex-grow flex-col items-center justify-center p-5 py-14 shadow shadow-black/20 ring-1 ring-black/10 "
+        >
           <p className="max-w-prose text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
             leo vel tellus dictum malesuada eget eu quam. Suspendisse dictum

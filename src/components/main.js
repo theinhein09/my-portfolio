@@ -6,7 +6,7 @@ export function Main() {
   return (
     <main className="mx-auto flex max-w-7xl gap-2">
       <Sidebar />
-      <div className="flex-grow">
+      <div role="none" className="flex-grow">
         <About />
         <Projects />
       </div>

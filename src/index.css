@@ -77,13 +77,13 @@
   }
   nav,
   nav menu {
-    @apply bg-white;
+    @apply bg-white dark:bg-neutral-600;
   }
 }
 
 @layer components {
   .navlink-active {
-    @apply ring-1 ring-black/10;
+    @apply ring-1 ring-black/10 dark:ring-neutral-400;
   }
   .sidebar-link-active {
     @apply underline decoration-4 underline-offset-2;

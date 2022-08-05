@@ -11,7 +11,7 @@ export function Navbar() {
       <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("home", {
                 smooth: true,
@@ -31,7 +31,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("about", {
                 smooth: true,
@@ -54,7 +54,7 @@ export function Navbar() {
         <li className="relative">
           <button
             onClick={() => setProjectsMenu(!projectsMenu)}
-            className="rounded px-4 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="rounded px-4 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
           >
             Projects
           </button>
@@ -67,7 +67,7 @@ export function Navbar() {
               {projects.map(({ name, id, Icon }) => (
                 <li role="menuitem" key={name}>
                   <button
-                    className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+                    className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
                     onClick={() =>
                       scroller.scrollTo(id, {
                         smooth: true,
@@ -94,7 +94,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("contact", {
                 smooth: true,

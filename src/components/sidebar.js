@@ -9,7 +9,7 @@ export function Sidebar() {
       <ul className="flex flex-col gap-4">
         <li>
           <button
-            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("home", {
                 smooth: true,
@@ -30,7 +30,7 @@ export function Sidebar() {
         </li>
         <li>
           <button
-            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("about", {
                 smooth: true,
@@ -51,7 +51,7 @@ export function Sidebar() {
         </li>
         <li>
           <button
-            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("projects", {
                 smooth: true,
@@ -73,7 +73,7 @@ export function Sidebar() {
             {projects.map(({ name, id, Icon }) => (
               <li key={name}>
                 <button
-                  className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+                  className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
                   onClick={() =>
                     scroller.scrollTo(id, {
                       smooth: true,
@@ -97,7 +97,7 @@ export function Sidebar() {
         </li>
         <li>
           <button
-            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
+            className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("contact", {
                 smooth: true,

@@ -25,7 +25,7 @@ export function Video({ url }) {
         controlsList="nodownload noremoteplayback"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        className="rounded transition-all"
+        className="rounded transition-all dark:brightness-90 hover:dark:filter-none"
       >
         <source src={`${url}.webm`} type="video/webm" />
         <source src={`${url}.mp4`} type="video/mp4" />
