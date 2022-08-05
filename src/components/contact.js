@@ -9,12 +9,12 @@ export function Contact() {
       </header>
       <address className="flex flex-grow flex-col items-end justify-center px-4">
         <ul className="flex flex-col gap-10 text-right">
-          <li>Fremont, California</li>
-          <li>United State</li>
+          <li className="px-2 py-0.5">Fremont, California</li>
+          <li className="px-2 py-0.5">United State</li>
           <li>
             <a
               href="mailto:theinhein09@gmail.com"
-              className="flex items-center justify-end gap-2"
+              className="flex items-center justify-end gap-2 rounded px-2 py-0.5 transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             >
               <MdEmail />
               theinhein09@gmail.com
@@ -23,14 +23,14 @@ export function Contact() {
           <li>
             <a
               href="tel:+1510-857-9331"
-              className="flex items-center justify-end gap-2"
+              className="flex items-center justify-end gap-2 rounded px-2 py-0.5 transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             >
               <FaMobile />
               +1 (510) 857 - 9331
             </a>
           </li>
         </ul>
-        <p className="mt-10 max-w-xs text-right text-lg font-bold md:max-w-fit">
+        <p className="mt-10 max-w-xs py-0.5 px-2 text-right text-lg font-bold md:max-w-fit">
           Let's have a chat!
         </p>
       </address>
