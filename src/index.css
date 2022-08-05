@@ -50,7 +50,7 @@
 @layer base {
   html,
   body {
-    @apply bg-neutral-50 font-lato font-thin tracking-wide dark:bg-neutral-700 dark:text-neutral-200;
+    @apply bg-white font-lato font-thin tracking-wide dark:bg-neutral-700 dark:text-neutral-200;
   }
   h1,
   h2,
@@ -83,7 +83,7 @@
 
 @layer components {
   .navlink-active {
-    @apply ring-1 ring-black/10 dark:ring-neutral-400;
+    @apply shadow-sm shadow-black/20 ring-1 ring-black/10 dark:ring-neutral-400;
   }
   .sidebar-link-active {
     @apply underline decoration-4 underline-offset-2;

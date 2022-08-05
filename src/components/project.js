@@ -52,11 +52,10 @@ export function Project({ project }) {
             emulateTouch
             swipeable
             className="relative"
-            width={384}
           >
             {project.videos.map(({ id, url }) => (
               <div key={id} className="flex w-full justify-center">
-                <div className="my-2 flex h-96 w-full  max-w-sm items-center justify-center p-1 shadow-md ring-1 ring-black/5">
+                <div className="my-2 flex h-96 w-full max-w-sm items-center justify-center p-1 shadow-md ring-1 ring-black/5">
                   <Video url={url} />
                 </div>
               </div>

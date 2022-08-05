@@ -8,10 +8,10 @@ export function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 mx-auto mt-3 h-10 max-w-7xl shadow-md shadow-black/10 ring-1 ring-black/5 md:hidden">
-      <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
+      <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4 text-sm">
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+            className="rounded py-0.5 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("home", {
                 smooth: true,
@@ -31,7 +31,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+            className="rounded py-0.5 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("about", {
                 smooth: true,
@@ -54,20 +54,20 @@ export function Navbar() {
         <li className="relative">
           <button
             onClick={() => setProjectsMenu(!projectsMenu)}
-            className="rounded px-4 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+            className="rounded py-0.5 px-4 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
           >
             Projects
           </button>
           <OutSideClickListener action={() => setProjectsMenu(false)}>
             <menu
-              className={`absolute -bottom-3 z-50 flex w-40 min-w-max translate-y-full flex-col gap-3 rounded-lg p-2 shadow-lg shadow-black/30 ring-1 ring-black/10 transition-all ${
+              className={`absolute -bottom-3 right-0 z-50 flex min-w-max translate-x-1/2 translate-y-full flex-col gap-3 rounded-lg p-2 shadow-lg shadow-black/30 ring-1 ring-black/10 transition-all ${
                 projectsMenu ? "visible opacity-100" : "invisible opacity-0"
               }`}
             >
               {projects.map(({ name, id, Icon }) => (
                 <li role="menuitem" key={name}>
                   <button
-                    className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+                    className="w-full rounded py-0.5 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
                     onClick={() =>
                       scroller.scrollTo(id, {
                         smooth: true,
@@ -94,7 +94,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+            className="rounded py-0.5 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
             onClick={() =>
               scroller.scrollTo("contact", {
                 smooth: true,
