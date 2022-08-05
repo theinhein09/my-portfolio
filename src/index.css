@@ -50,7 +50,7 @@
 @layer base {
   html,
   body {
-    @apply bg-white font-lato font-thin tracking-wide dark:bg-neutral-700 dark:text-neutral-200;
+    @apply bg-neutral-100 font-lato font-thin tracking-wide dark:bg-neutral-700 dark:text-neutral-200;
   }
   h1,
   h2,
