@@ -7,7 +7,7 @@ export function Navbar() {
   const [projectsMenu, setProjectsMenu] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 mx-auto h-10 max-w-7xl shadow-md shadow-black/10 ring-1 ring-black/5 md:hidden">
+    <nav className="sticky top-0 z-50 mx-auto mt-3 h-10 max-w-7xl shadow-md shadow-black/10 ring-1 ring-black/5 md:hidden">
       <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
         <li>
           <button

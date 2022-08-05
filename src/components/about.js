@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section
-      className="my-4 flex min-h-screen flex-col  py-4  ring-1 ring-black/10"
+      className="my-4 flex min-h-screen flex-col py-4 ring-1 ring-black/10"
       id="about"
     >
       <header className="flex h-14 items-center px-4 ">
