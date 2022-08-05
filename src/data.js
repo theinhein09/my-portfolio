@@ -3,6 +3,8 @@ import { BsFacebook } from "react-icons/bs";
 import { FaYelp } from "react-icons/fa";
 import { IoColorPaletteOutline } from "react-icons/io5";
 
+const transformation = "e_accelerate:100,r_10";
+
 export const projects = [
   {
     name: "Note Taking App",
@@ -25,11 +27,11 @@ export const projects = [
     videos: [
       {
         id: "908f90e3-44c3-4578-a161-d6c8a1fd1f86",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/note-it_futqa1`,
       },
       {
         id: "8075c81d-31c7-432e-8c3d-a91b3172d351",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/note-it-editor_f0q5lk`,
       },
     ],
   },
@@ -46,16 +48,20 @@ export const projects = [
       { id: "31813f0a-3992-4880-9bc6-494f7a38f67b", name: "Cloudinary" },
     ],
     "source-code": "https://github.com/theinhein09/facebook-clone",
-    "live-demo": "https://facebook-clone-09.netlify.app",
+    "live-demo": "https://main--facebook-clone-09.netlify.app/",
     Icon: BsFacebook,
     videos: [
       {
         id: "d4487aa7-17f8-446e-84fe-c786dd099ebb",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/facebook-clone-post_qmibus`,
       },
       {
         id: "5ee300b9-8a14-4c7d-8e0f-eb7d49f4dfe6",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/facebook-clone-post_qmibus`,
+      },
+      {
+        id: "f7b50ad7-0edb-41fd-b6c6-93a218c46cea",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/facebook-clone-friends_szg3yr`,
       },
     ],
   },
@@ -80,11 +86,11 @@ export const projects = [
     videos: [
       {
         id: "cfa5d631-5aa4-46a1-b57a-293c91766f63",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/yelp-camp-signup_rvirf9`,
       },
       {
         id: "c933044e-11dc-40d2-a459-dee56faeb923",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/yelp-camp-map-and-review_bukk9u`,
       },
     ],
   },
@@ -107,11 +113,15 @@ export const projects = [
     videos: [
       {
         id: "902f0ce6-4528-44d2-b58e-61afc6687bac",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/color-palette-generator-built-in_xl38to`,
       },
       {
         id: "0c638b3c-c9ff-492b-b967-ea817d393fb6",
-        url: "https://res.cloudinary.com/dmkcfie45/video/upload/e_accelerate:100/w_900,h_900,c_crop/portfolio/note-it_b7vv2g",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/color-palette-generator-create_latgvv`,
+      },
+      {
+        id: "397ae1ff-4112-47ad-869f-b4fabcfcf8ed",
+        url: `https://res.cloudinary.com/dmkcfie45/video/upload/${transformation}/portfolio/color-palette-generator-save_xusuju`,
       },
     ],
   },
