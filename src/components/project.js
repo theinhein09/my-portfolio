@@ -17,7 +17,7 @@ export function Project({ project }) {
           href={project["source-code"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50 dark:ring-neutral-400 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
         >
           <BsGithub />
           <span>Source code</span>
@@ -26,18 +26,18 @@ export function Project({ project }) {
           href={project["live-demo"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50 dark:ring-neutral-400 hover:dark:text-neutral-700 focus:dark:text-neutral-700"
         >
           <FiExternalLink />
           Live Demo
         </a>
       </section>
       <section className="flex flex-grow flex-col items-center gap-2 px-4">
-        <section className="hidden w-full max-w-6xl gap-5 p-1 xl:flex">
+        <section className="hidden w-full max-w-6xl gap-4 p-1 xl:flex">
           {project.videos.map(({ id, url }) => (
             <div
               key={id}
-              className="flex h-96 flex-grow items-center justify-center p-1 shadow-md ring-1 ring-black/5"
+              className="flex h-96 flex-grow items-center justify-center p-1 shadow-md ring-1 ring-black/5 "
             >
               <Video url={url} />
             </div>
@@ -52,6 +52,7 @@ export function Project({ project }) {
             emulateTouch
             swipeable
             className="relative"
+            width={384}
           >
             {project.videos.map(({ id, url }) => (
               <div key={id} className="flex w-full justify-center">
