@@ -11,7 +11,7 @@ export function Navbar() {
       <ul className="mx-auto flex h-full max-w-5xl items-center justify-between px-4">
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-100 focus:bg-neutral-100"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
             onClick={() =>
               scroller.scrollTo("home", {
                 smooth: true,
@@ -23,7 +23,7 @@ export function Navbar() {
               smooth
               spy
               to="home"
-              className="rounded px-4 py-1 transition-all"
+              className="rounded px-4 py-0.5 transition-all"
             >
               Home
             </Link>
@@ -31,7 +31,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-100 focus:bg-neutral-100"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
             onClick={() =>
               scroller.scrollTo("about", {
                 smooth: true,
@@ -45,7 +45,7 @@ export function Navbar() {
               spy
               to="about"
               offset={-30}
-              className="rounded px-4 py-1 transition-all"
+              className="rounded px-4 py-0.5 transition-all"
             >
               About
             </Link>
@@ -54,7 +54,7 @@ export function Navbar() {
         <li className="relative">
           <button
             onClick={() => setProjectsMenu(!projectsMenu)}
-            className="rounded px-4 outline-none transition-all hover:bg-neutral-100 focus:bg-neutral-100"
+            className="rounded px-4 outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
           >
             Projects
           </button>
@@ -67,7 +67,7 @@ export function Navbar() {
               {projects.map(({ name, id, Icon }) => (
                 <li role="menuitem" key={name}>
                   <button
-                    className="w-full rounded outline-none transition-all hover:bg-neutral-100 focus:bg-neutral-100"
+                    className="w-full rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
                     onClick={() =>
                       scroller.scrollTo(id, {
                         smooth: true,
@@ -80,7 +80,7 @@ export function Navbar() {
                       smooth
                       spy
                       to={id}
-                      className="flex items-center gap-2 rounded py-1 pl-1 pr-4 transition-all "
+                      className="flex items-center gap-2 rounded py-0.5 pl-1 pr-4 transition-all "
                       offset={-30}
                     >
                       <Icon />
@@ -94,7 +94,7 @@ export function Navbar() {
         </li>
         <li>
           <button
-            className="rounded outline-none transition-all hover:bg-neutral-100 focus:bg-neutral-100"
+            className="rounded outline-none transition-all hover:bg-neutral-200 focus:bg-neutral-200"
             onClick={() =>
               scroller.scrollTo("contact", {
                 smooth: true,
@@ -108,7 +108,7 @@ export function Navbar() {
               spy
               to="contact"
               offset={-30}
-              className="rounded px-4 py-1 transition-all"
+              className="rounded px-4 py-0.5 transition-all"
             >
               Contact
             </Link>

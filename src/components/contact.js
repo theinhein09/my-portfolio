@@ -31,7 +31,7 @@ export function Contact() {
           </li>
         </ul>
         <p className="mt-10 max-w-xs text-right text-lg font-bold md:max-w-fit">
-          Let's talk!
+          Let's have a chat!
         </p>
       </address>
     </section>

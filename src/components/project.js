@@ -17,7 +17,7 @@ export function Project({ project }) {
           href={project["source-code"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50"
         >
           <BsGithub />
           <span>Source code</span>
@@ -26,7 +26,7 @@ export function Project({ project }) {
           href={project["live-demo"]}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:shadow-black/50 focus:shadow-black/50"
+          className="flex w-32 items-center justify-center gap-1.5 rounded px-2 py-1 text-sm shadow outline-none ring-1 ring-black/10 transition-all hover:bg-neutral-200 hover:shadow-black/50 focus:bg-neutral-200 focus:shadow-black/50"
         >
           <FiExternalLink />
           Live Demo
