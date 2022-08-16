@@ -48,7 +48,7 @@ export const projects = [
       { id: "31813f0a-3992-4880-9bc6-494f7a38f67b", name: "Cloudinary" },
     ],
     "source-code": "https://github.com/theinhein09/facebook-clone",
-    "live-demo": "https://main--facebook-clone-09.netlify.app/",
+    "live-demo": "https://facebook-clone-09.netlify.app/",
     Icon: BsFacebook,
     videos: [
       {
